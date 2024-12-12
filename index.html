@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>trocador de cor</title>
+</head>
+<body>
+    <main>
+        <h1>troca de cor</h1>
+        <button onclick="trocaCor('red')">vermelho</button>
+        <button onclick="trocaCor('green')">verde</button>
+        <button onclick="trocaCor('blue')">azul</button>
+        <button onclick="trocaCor('yellow')">amarelo</button>
+        <button>cor aleatória</button>
+        <br/>
+
+        <input placeholder="Nome da cor ou #HEX" type="text" class="input-cor">
+        <button onclick=" AplicaCorPersonalizada ()">Aplicar cor</button>
+        <input type="color" onchange="trocaCor(this.value)">
+        <br />
+        <label>
+            Escolher Imagem
+            <input type="file" accept="image/*" onchange="escolherImagem(this.files[0])">
+        </label>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
